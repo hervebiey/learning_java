@@ -24,18 +24,13 @@ public class FunctionalProgrammingRunner {
     }
 
     private static void printWithFP(List<String> list) {
-        list.stream().forEach(
-                element -> System.out.println("Element - " + element)
-        );
+        list.stream()
+                .forEach(element -> System.out.println("Element - " + element));
     }
 
     private static void printWithFPWithFiltering(List<String> list) {
         list.stream()
-                .filter(
-                        element -> element.endsWith("at")
-                )
-                .forEach(
-                        element -> System.out.println("Element - " + element)
-                );
+                .filter(element -> element.endsWith("at"))
+                .forEach(element -> System.out.println("Element - " + element));
     }
 }
